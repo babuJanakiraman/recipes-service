@@ -1,7 +1,7 @@
 # Recipes Service Application
 
 ## Overview
-The Recipe Service Application is a Spring Boot-based RESTful API that allows users to manage and search for recipes. It supports operations such as adding, updating, deleting, and searching for recipes based on various criteria.
+The Recipes Service Application is a Spring Boot-based RESTful API that allows users to manage and search for recipes. It supports operations such as adding, updating, deleting, and searching for recipes based on various criteria.
 
 
 ## Features
