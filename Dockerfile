@@ -1,7 +1,7 @@
 FROM openjdk:21-jdk-slim
 
-ADD target/recipe-service-1.0.jar recipe-service.jar
+ADD target/recipes-service-1.0.jar recipes-service.jar
 
 EXPOSE 8100
 
-ENTRYPOINT ["java", "-jar", "employee-database.jar"]
+ENTRYPOINT ["java", "-jar", "recipes-service.jar"]
