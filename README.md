@@ -147,8 +147,8 @@ The following endpoints are available in the Recipe Service Application.
 
 ### Clone the Repository
 ```shell
-git clone https://github.com/your-username/recipe-service.git
-cd recipe-service
+git clone https://github.com/babuJanakiraman/recipes-service.git
+cd recipes-service
 ```
 ### Build the Project
 ```shell
