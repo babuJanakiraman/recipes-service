@@ -157,7 +157,7 @@
                 <version>7.8.0</version>
                 <executions>
                     <execution>
-                        <id>employee-service-swagger-generation</id>
+                        <id>recipes-service-swagger-generation</id>
                         <goals>
                             <goal>generate</goal>
                         </goals>
