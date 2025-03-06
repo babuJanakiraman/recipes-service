@@ -97,37 +97,4 @@ public class RecipeService {
         return cq;
     }
 
-//    public List<RecipeDto> searchRecipesDynamicQuery(Boolean vegetarian, Integer servings, String instructions, List<String> includeIngredients, List<String> excludeIngredients) {
-//        TypedQuery<Recipe> query = getRecipeTypedQuery(vegetarian, servings, instructions, includeIngredients, excludeIngredients);
-//        return query.getResultList().stream().map(RecipeMapper.INSTANCE::toDto).collect(Collectors.toList());
-//    }
-//
-//    private TypedQuery<Recipe> getRecipeTypedQuery(Boolean vegetarian, Integer servings, String instructions, List<String> includeIngredients, List<String> excludeIngredients) {
-//        String queryStr = getQueryString(vegetarian, servings, instructions, includeIngredients, excludeIngredients);
-//        TypedQuery<Recipe> query = entityManager.createQuery(queryStr, Recipe.class);
-//
-//        if (vegetarian != null) query.setParameter("vegetarian", vegetarian);
-//        if (servings != null) query.setParameter("servings", servings);
-//        if (instructions != null && !instructions.isEmpty()) query.setParameter("instructions", "%" + instructions + "%");
-//        return query;
-//    }
-//
-//    private static String getQueryString(Boolean vegetarian, Integer servings, String instructions, List<String> includeIngredients, List<String> excludeIngredients) {
-//        String queryStr = "SELECT r FROM Recipe r WHERE 1=1";
-//
-//        if (vegetarian != null) queryStr += " AND r.vegetarian = :vegetarian";
-//        if (servings != null) queryStr += " AND r.servings = :servings";
-//        if (instructions != null && !instructions.isEmpty()) queryStr += " AND r.instructions LIKE :instructions";
-//        if (includeIngredients != null && !includeIngredients.isEmpty()) {
-//            queryStr += " AND (" + includeIngredients.stream()
-//                    .map(i -> "r.ingredients LIKE '%" + i + "%'")
-//                    .collect(Collectors.joining(" OR ")) + ")";
-//        }
-//        if (excludeIngredients != null && !excludeIngredients.isEmpty()) {
-//            queryStr += " AND (" + excludeIngredients.stream()
-//                    .map(e -> "r.ingredients NOT LIKE '%" + e + "%'")
-//                    .collect(Collectors.joining(" AND ")) + ")";
-//        }
-//        return queryStr;
-//    }
 }
